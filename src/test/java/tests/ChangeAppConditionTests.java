@@ -1,4 +1,4 @@
-package libs.tests;
+package tests;
 import libs.CoreTestCase;
 import libs.ui.SaveTwoArticlesPageObject;
 import libs.ui.SearchPageObject;
