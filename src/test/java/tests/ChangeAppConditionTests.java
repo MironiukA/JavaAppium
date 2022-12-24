@@ -2,6 +2,7 @@ package tests;
 import libs.CoreTestCase;
 import libs.ui.SaveTwoArticlesPageObject;
 import libs.ui.SearchPageObject;
+import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.ScreenOrientation;
 import java.time.Duration;
@@ -23,7 +24,7 @@ public class ChangeAppConditionTests extends CoreTestCase {
 
         String title_after_rotation = SaveTwoArticlesPageObject.getArticleTitle();
 
-        assertEquals(
+        Assert.assertEquals(
                 "Article title has been changed after rotation",
                 title_before_rotation,
                 title_after_rotation
@@ -33,7 +34,7 @@ public class ChangeAppConditionTests extends CoreTestCase {
 
         String title_after_second_rotation = SaveTwoArticlesPageObject.getArticleTitle();
 
-        assertEquals(
+        Assert.assertEquals(
                 "Article title has been changed after rotation",
                 title_before_rotation,
                 title_after_second_rotation

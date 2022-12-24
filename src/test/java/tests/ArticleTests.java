@@ -1,12 +1,17 @@
 package tests;
+import io.qameta.allure.Description;
+import io.qameta.allure.junit4.DisplayName;
 import libs.CoreTestCase;
 import libs.ui.SaveTwoArticlesPageObject;
 import libs.ui.SearchPageObject;
+import org.junit.Assert;
 import org.junit.Test;
 
 public class ArticleTests  extends CoreTestCase{
 
     @Test
+    @DisplayName("Not Empty")
+    @Description("Проверяем что-то")
     public void testAmountOfNotEmptySearch(){
         String search_line = "Linkin Park discography";
         SearchPageObject SearchPageObject = new SearchPageObject(driver);
@@ -18,13 +23,15 @@ public class ArticleTests  extends CoreTestCase{
 
         int amount_of_search_results = SearchPageObject.getAmountOfFoundsArticle();
 
-        assertTrue(
+        Assert.assertTrue(
                 "We found a few results",
                 amount_of_search_results > 0
         );
     }
 
     @Test
+    @DisplayName("Save 2 articles")
+    @Description("Сохраняем сначала одну, потом вторую")
     public void testSaveTwoArticles(){
         String first_article_name = "Testing framework for web applications";
         String second_article_name = "Use of Selenium by organisms";
@@ -60,6 +67,6 @@ public class ArticleTests  extends CoreTestCase{
         SaveTwoArticlesPageObject.checkForAvailable(second_article_name);
         //Открываем первую сатью и сравниваем результат
         String result_after_delete = SaveTwoArticlesPageObject.compareFirstArticle(first_article_name);
-        assertEquals("Article is not compare", first_article_name,result_after_delete);
+        Assert.assertEquals("Article is not compare", first_article_name,result_after_delete);
     }
 }

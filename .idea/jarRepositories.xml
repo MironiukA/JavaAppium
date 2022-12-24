@@ -12,6 +12,16 @@
       <option name="url" value="https://mvnrepository.com/artifact/io.appium/java-client" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="io.qameta.allure" />
+      <option name="name" value="io.qameta.allure" />
+      <option name="url" value="https://mvnrepository.com/artifact/io.qameta.allure/allure-junit4/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="opencastproject" />
+      <option name="name" value="opencastproject" />
+      <option name="url" value="http://repository.opencastproject.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="central" />
       <option name="name" value="Maven Central repository" />
       <option name="url" value="https://repo1.maven.org/maven2" />
@@ -22,9 +32,19 @@
       <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="org.aspectj" />
+      <option name="name" value="org.aspectj" />
+      <option name="url" value="https://mvnrepository.com/artifact/org.aspectj/aspectjweaver" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="id репозитория" />
       <option name="name" value="id репозитория" />
       <option name="url" value="https://mvnrepository.com/artifact/io.appium/java-client" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="io.qameta.allure" />
+      <option name="name" value="io.qameta.allure" />
+      <option name="url" value="https://mvnrepository.com/artifact/io.qameta.allure/allure-junit4" />
     </remote-repository>
   </component>
 </project>
